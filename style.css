@@ -1,0 +1,198 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+p,li {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.2;
+  font-weight: 300;
+}
+
+.hero {
+  background: linear-gradient(rgba(231, 76, 60, .4), rgba(231, 76, 60, .4)), url('./img/hero.png') no-repeat center center /cover;
+  max-width: 100%;
+  padding: 0px 120px;
+  height: 90vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.underline {
+  position: relative;
+}
+
+.underline:hover {
+  color: #eee !important;
+}
+
+.underline:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #eee;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+
+.underline:hover:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+.hero-content {
+  margin-top: 60px;
+}
+
+.hero-text {
+  float: left;
+  width: 40%;
+}
+
+.hero-text p {
+  font-size: 20px;
+  font-weight: lighter;
+  padding: 25px 0px;
+}
+
+.hero-text button {
+  font-size: 10px;
+  font-weight: bold;
+  padding: 10px 25px;
+}
+
+.hero-text button img {
+  margin-right: 15px;
+  width: 15px;
+}
+
+.hero-iphone {
+  float: right;
+}
+
+.hero-iphone img {
+  width: 400px;
+  height: 650px;
+}
+
+@media all and (max-width: 925px) {
+  .hero-iphone img {
+    display: none;
+  }
+
+  .hero-text {
+    width: 100%;
+  }
+
+  .hero-content {
+    margin-top: 30px;
+  }
+}
+
+.download-hero {
+  background: url('./img/hero-2.png') no-repeat center center /cover;
+  max-width: 100%;
+  height: 80vh;
+  position: relative;
+}
+
+.download-hero-content {
+  position: absolute;
+  top: 25%;
+  left: 12%;
+  width: 30%;
+}
+
+.download-hero-content h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.download-hero-content p {
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.download-hero-content h2>span {
+  color: #E74C3C;
+}
+
+.btn-download {
+  background-color: #E74C3C;
+  color: #eee;
+  padding: 10px 20px;
+  transition: .4s;
+}
+
+.btn-download:hover {
+  background-color: rgb(207, 29, 9);
+  color: #eee;
+}
+
+@media (max-width: 992px){
+  .download-hero-content {
+    top: 5%;
+  }
+}
+
+@media (max-width: 575px) {
+  .download-hero-content p {
+    display: none;
+  }
+}
+
+.footer-upper{
+  background-color: #2e2e38;
+  padding: 5%;
+
+}
+
+.footer-col h5, ul {
+  width: 60%;
+}
+
+.footer-upper ul{
+  padding-inline-start: 0;
+}
+
+.rectangle {
+  width: 50px;
+  height: 30px;
+  background: red;
+  float: left;
+  margin-right: 20px;
+}
+
+
+.footer-upper ul li {
+  float: left;
+  list-style: none;
+  font-size: 14px;
+  line-height: 1;
+  margin-top: 20px;
+}
+
+.footer-upper ul li span {
+  font-size: 10px;
+}
+
+.footer-bottom p{
+  padding: 20px 0px;
+  font-weight: normal;
+  word-spacing: 5px;
+}
+
